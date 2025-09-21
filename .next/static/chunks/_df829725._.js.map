@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Guille/Documents/Arquetype/services/query.ts"],"sourcesContent":["import { QueryClient } from '@tanstack/react-query';\r\nexport const queryClient = new QueryClient();"],"names":[],"mappings":";;;;AAAA;;AACO,MAAM,cAAc,IAAI,+LAAW","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Guille/Documents/Arquetype/app/%5Blocale%5D/users/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { Users } from \"@/screens/users/Users\";\r\nimport { QueryClientProvider } from \"@tanstack/react-query\";\r\nimport { queryClient } from \"@/services/query\";\r\n\r\nexport default function Page() {\r\n  return (\r\n    <QueryClientProvider client={queryClient}>\r\n      <Users />\r\n    </QueryClientProvider>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;AAGA;AACA;AAJA;;;;;AAMe,SAAS;IACtB,qBACE,6LAAC,gNAAmB;QAAC,QAAQ,mIAAW;kBACtC,cAAA,6LAAC;;;;;;;;;;AAGP;KANwB","debugId":null}}]
+}

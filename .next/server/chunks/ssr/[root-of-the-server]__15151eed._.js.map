@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Guille/Documents/Ntasys-Automate/frontend/app/%5Blocale%5D/page.tsx"],"sourcesContent":["\nexport default function Home() {\n  return (\n    <div>\n     Hola mundo\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AACe,SAAS;IACtB,qBACE,0PAAC;kBAAI;;;;;;AAIT","debugId":null}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/globals.css"],"sourcesContent":[":root { --background:#ffffff; --foreground:#171717; }\n@media (prefers-color-scheme: dark){\n  :root { --background:#0a0a0a; --foreground:#ededed; }\n}\n\n* { box-sizing:border-box; }\nhtml, body {\n  padding:0; margin:0;\n  max-width:100vw; overflow-x:hidden;\n  background:var(--background); color:var(--foreground);\n  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;\n}\na { color:inherit; text-decoration:none; }\n"],"names":[],"mappings":"AAAA;;;;;AACA;EACE;;;;;;AAGF;;;;AACA;;;;;;;;;;AAMA"}}]
+}

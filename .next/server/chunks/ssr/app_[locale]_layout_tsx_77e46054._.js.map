@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Guille/Documents/Ntasys-Automate/frontend/app/%5Blocale%5D/layout.tsx"],"sourcesContent":["import {NextIntlClientProvider} from 'next-intl';\r\nimport {notFound} from 'next/navigation';\r\n\r\nexport function generateStaticParams() {\r\n  return [{locale: 'es'}, {locale: 'en'}];\r\n}\r\n\r\nexport default async function LocaleLayout({\r\n  children,\r\n  params: {locale}\r\n}: {\r\n  children: React.ReactNode;\r\n  params: {locale: 'es' | 'en'};\r\n}) {\r\n  let messages;\r\n  try {\r\n    messages = (await import(`@/messages/${locale}.json`)).default;\r\n  } catch {\r\n    notFound();\r\n  }\r\n\r\n  return (\r\n    <NextIntlClientProvider locale={locale} messages={messages}>\r\n      {children}\r\n    </NextIntlClientProvider>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;AAAA;AACA;AAAA;;;;AAEO,SAAS;IACd,OAAO;QAAC;YAAC,QAAQ;QAAI;QAAG;YAAC,QAAQ;QAAI;KAAE;AACzC;AAEe,eAAe,aAAa,EACzC,QAAQ,EACR,QAAQ,EAAC,MAAM,EAAC,EAIjB;IACC,IAAI;IACJ,IAAI;QACF,WAAW,CAAC;;;;;;;;;kBAAa,CAAC,WAAW,EAAE,OAAO,KAAK,CAAC,CAAC,EAAE,OAAO;IAChE,EAAE,OAAM;QACN,IAAA,iMAAQ;IACV;IAEA,qBACE,8OAAC,4RAAsB;QAAC,QAAQ;QAAQ,UAAU;kBAC/C;;;;;;AAGP","debugId":null}}]
+}

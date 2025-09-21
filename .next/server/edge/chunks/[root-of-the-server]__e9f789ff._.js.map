@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/frontend/i18n/routing.ts"],"sourcesContent":["// src/i18n/routing.ts\r\nimport {defineRouting} from 'next-intl/routing';\r\n\r\nexport const routing = defineRouting({\r\n  locales: ['es', 'en'],\r\n  defaultLocale: 'es'\r\n});"],"names":[],"mappings":"AAAA,sBAAsB;;;;;AACtB;;AAEO,MAAM,UAAU,IAAA,uQAAa,EAAC;IACnC,SAAS;QAAC;QAAM;KAAK;IACrB,eAAe;AACjB"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/frontend/middleware.ts"],"sourcesContent":["// middleware.ts (raíz)\r\nimport createMiddleware from 'next-intl/middleware';\r\nimport { routing } from './i18n/routing';\r\n\r\nexport default createMiddleware(routing);\r\n\r\nexport const config = {\r\n  matcher: '/((?!api|trpc|_next|_vercel|.*\\\\..*).*)'\r\n};\r\n"],"names":[],"mappings":"AAAA,uBAAuB;;;;;;;AACvB;AACA;;;uCAEe,IAAA,qNAAgB,EAAC,8IAAO;AAEhC,MAAM,SAAS;IACpB,SAAS;AACX"}}]
+}
